@@ -1,0 +1,240 @@
+name: Machine Learning Algorithms API
+description: A comprehensive API providing implementations of various machine learning algorithms.
+version: 1.0.0
+
+structure:
+  - directory: .
+    files:
+      - README.md
+      - requirements.txt
+      - setup.py
+  - directory: gradient_descent
+    files:
+      - __init__.py
+      - gradient_descent.py
+  - directory: second_order_methods
+    files:
+      - __init__.py
+      - second_order_methods.py
+  - directory: regularization
+    files:
+      - __init__.py
+      - regularization.py
+  - directory: bandit_optimization
+    files:
+      - __init__.py
+      - bandit_optimization.py
+  - directory: projection_free_algorithms
+    files:
+      - __init__.py
+      - projection_free_algorithms.py
+  - directory: game_theory
+    files:
+      - __init__.py
+      - game_theory.py
+  - directory: learning_theory
+    files:
+      - __init__.py
+      - learning_theory.py
+  - directory: adaptive_regret
+    files:
+      - __init__.py
+      - adaptive_regret.py
+  - directory: boosting
+    files:
+      - __init__.py
+      - boosting.py
+  - directory: blackwell_approachability
+    files:
+      - __init__.py
+      - blackwell_approachability.py
+  - directory: momentum_optimization
+    files:
+      - __init__.py
+      - momentum_optimization.py
+  - directory: stepsize_scheduling
+    files:
+      - __init__.py
+      - stepsize_scheduling.py
+  - directory: random_counter_examples
+    files:
+      - __init__.py
+      - random_counter_examples.py
+  - directory: utils
+    files:
+      - __init__.py
+      - cuda_support.py
+      - helper_functions.py
+
+modules:
+  gradient_descent:
+    description: Implementations of gradient descent algorithms.
+    functions:
+      - name: batch_gradient_descent
+        file: gradient_descent.py
+      - name: mini_batch_gradient_descent
+        file: gradient_descent.py
+      - name: stochastic_gradient_descent
+        file: gradient_descent.py
+
+  second_order_methods:
+    description: Algorithms that leverage second-order derivatives.
+    functions:
+      - name: newton_method
+        file: second_order_methods.py
+      - name: quasi_newton_method
+        file: second_order_methods.py
+      - name: conjugate_gradient_method
+        file: second_order_methods.py
+
+  regularization:
+    description: Regularization techniques to prevent overfitting.
+    functions:
+      - name: lasso_regularization
+        file: regularization.py
+      - name: ridge_regularization
+        file: regularization.py
+      - name: elastic_net_regularization
+        file: regularization.py
+
+  bandit_optimization:
+    description: Algorithms for optimization in multi-armed bandit problems.
+    functions:
+      - name: epsilon_greedy
+        file: bandit_optimization.py
+      - name: ucb_algorithm
+        file: bandit_optimization.py
+      - name: thompson_sampling
+        file: bandit_optimization.py
+
+  projection_free_algorithms:
+    description: Projection-free optimization methods.
+    functions:
+      - name: conditional_gradient
+        file: projection_free_algorithms.py
+      - name: conditional_gradient_projection_free
+        file: projection_free_algorithms.py
+      - name: linear_oracle
+        file: projection_free_algorithms.py
+      - name: online_conditional_gradient
+        file: projection_free_algorithms.py
+
+  game_theory:
+    description: Algorithms related to game theory and linear programming.
+    functions:
+      - name: approximatingLinearPrograms
+        file: game_theory.py
+      - name: linearProgrammingDuality
+        file: game_theory.py
+      - name: vonNeumannTheorem
+        file: game_theory.py
+      - name: zeroSumGame
+        file: game_theory.py
+
+  learning_theory:
+    description: Theoretical machine learning algorithms.
+    functions:
+      - various_learning_theory_algorithms
+
+  adaptive_regret:
+    description: Algorithms for adaptive regret minimization.
+    functions:
+      - adaptive_regret_algorithms
+
+  boosting:
+    description: Boosting algorithms for improving model performance.
+    functions:
+      - name: adaboost
+        file: boosting.py
+      - name: boostingByOCO
+        file: boosting.py
+      - name: contextualLearningModel
+        file: boosting.py
+      - name: onlineBoosting
+        file: boosting.py
+      - name: predictBoostedModel
+        file: boosting.py
+
+  blackwell_approachability:
+    description: Blackwell approachability theory algorithms.
+    functions:
+      - blackwell_approachability_algorithms
+
+  momentum_optimization:
+    description: Momentum-based optimization algorithms.
+    functions:
+      - name: adadelta
+        file: momentum_optimization.py
+      - name: adagrad
+        file: momentum_optimization.py
+      - name: adam
+        file: momentum_optimization.py
+      - name: amsgrad
+        file: momentum_optimization.py
+      - name: eve
+        file: momentum_optimization.py
+      - name: fasfa
+        file: momentum_optimization.py
+      - name: gradientDescentWithMomentum
+        file: momentum_optimization.py
+      - name: miniBatchGradientDescentWithMomentum
+        file: momentum_optimization.py
+      - name: nestrovMomentum
+        file: momentum_optimization.py
+      - name: rmsprop
+        file: momentum_optimization.py
+      - name: stochasticGradientDescentWithMomentum
+        file: momentum_optimization.py
+
+  stepsize_scheduling:
+    description: Algorithms for stepsize scheduling in optimization.
+    functions:
+      - name: constantScheduler
+        file: stepsize_scheduling.py
+      - name: cosineAnnealingScheduler
+        file: stepsize_scheduling.py
+      - name: cosineAnnealingWarmRestartsScheduler
+        file: stepsize_scheduling.py
+      - name: cyclicScheduler
+        file: stepsize_scheduling.py
+      - name: cyclicalLogAnnealingScheduler
+        file: stepsize_scheduling.py
+      - name: exponentialDecayScheduler
+        file: stepsize_scheduling.py
+      - name: inverseTimeDecayScheduler
+        file: stepsize_scheduling.py
+      - name: oneCycleScheduler
+        file: stepsize_scheduling.py
+      - name: polynomialDecayScheduler
+        file: stepsize_scheduling.py
+      - name: stepDecayScheduler
+        file: stepsize_scheduling.py
+      - name: timeBasedDecayScheduler
+        file: stepsize_scheduling.py
+      - name: triangularScheduler
+        file: stepsize_scheduling.py
+      - name: twoStepScheduler
+        file: stepsize_scheduling.py
+
+  random_counter_examples:
+    description: Interactive learning algorithms with random counter-examples using neural networks.
+    functions:
+      - name: arbitraryLearning
+        file: random_counter_examples.py
+      - name: majorityLearning
+        file: random_counter_examples.py
+      - name: randomizedLearning
+        file: random_counter_examples.py
+
+utilities:
+  - file: cuda_support.py
+    functions:
+      - check_cuda_availability
+      - check_tensorflow_gpu_support
+
+  - file: helper_functions.py
+    functions:
+      - load_data
+      - preprocess_data
+      - split_data
+      - generate_random_counter_example
