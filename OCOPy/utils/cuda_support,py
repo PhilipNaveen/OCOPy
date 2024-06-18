@@ -1,0 +1,9 @@
+# utils/cuda_support.py
+
+def check_cuda_availability():
+    """Check if CUDA is available."""
+    return torch.cuda.is_available()
+
+def get_device():
+    """Get the current device (CPU or GPU)."""
+    return torch.device('cuda' if torch.cuda.is_available() else 'cpu')
